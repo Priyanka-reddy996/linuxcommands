@@ -1,0 +1,3 @@
+init ---operating system maitenance commands
+  
+file display commands --cat,less,more,head,tail,vi
