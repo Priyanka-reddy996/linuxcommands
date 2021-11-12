@@ -1,0 +1,24 @@
+LINUX COMMANDS
+
+cd -go to home directory
+cd.. -to go up one level of the directory tree
+grep pattern file -search for pattern in file
+tar xzf archive.tar.gz -extract a gzip compressed tar file
+tar cjf archive.tar.bz2 -create a tar file with bzip2 compression
+tar xjf archive.tar.bz2 -extract a bzip2 compressed tar file
+U - user
+G -group
+W -world
+r -read
+w -write
+x -execute
+- -no access
+cat file -view the contents of file
+head file -display the first 10 lines of file
+tail file -diaplay the last 10 lines of file
+less file -brouse through a text file
+pwd -display the present working directory
+mkdir directory -create a directory
+rm file -remove or delete file
+rm -r directory -remove directory and its contents recursively
+cp file -copy files
