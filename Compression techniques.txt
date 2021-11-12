@@ -1,0 +1,21 @@
+        SOURCE CODE ARCHIVE/COMPRESSION FILE CREATION
+
+   -c :create a new archive .tar
+   -v :verbose output(display the all contents -Archive)
+   -f file.tar.gz :use archive file as name
+   -z :apply his compression technique(gzip) .tar.gz
+   -j :apply this compression technique(bzip2) .tar.bz2
+  
+
+
+
+       DESTINATION SIDE:CDECOMPRESS/EXTRACT ALL CONTENTS
+ 
+     
+    -x :extract of all files from the archive
+    -t :diaplay the list of all the contents in an archive
+    -v :verbose output
+    --exclude :exclude file matching PATTERN/DIR/FILENAME
+
+
+       
