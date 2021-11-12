@@ -1,0 +1,11 @@
+     chmod using Numeric Characters
+  
+ Number         Represents         Status
+   0            No Permission        ---
+   1           Execute Permission    --x
+   2           Write Permission      -w-
+   3           Execute and write     -wx
+   4           Read Permission       r--
+   5           Read,Execute          r-x
+   6           Read,Write            rw-
+   7          Read,Write,Execute     rwx
