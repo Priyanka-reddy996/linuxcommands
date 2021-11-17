@@ -1,0 +1,193 @@
+1)
+
+#!/bin/bash
+#timestable-print out a muliplication tabfor i in 1 2 
+for j in 1 2 3
+do
+ value='expr $i\*$j'
+ echo -n"$value"
+   done
+     echo
+    done
+
+OUTPUT:
+
+-nexpr $i\*$j
+-nexpr $i\*$j
+-nexpr $i\*$j
+
+-nexpr $i\*$j
+-nexpr $i\*$j
+-nexpr $i\*$j
+
+-nexpr $i\*$j
+-nexpr $i\*$j
+-nexpr $i\*$j
+
+  
+2)
+
+#!/bin/bash
+for i in *;do
+        echo -n "$i"
+        grep $i $i
+done
+
+
+OUTPUT:
+priyanka
+
+
+3)
+
+#!/bin/bash
+files= 'ls'
+for i in $files
+do
+        echo -n "$i"
+        grep $i $i
+done
+
+OUTPUT:
+priyanka
+
+
+
+4)
+
+#!/bin/bash
+smallest=10000
+for i in 5 8 19 8 7 3;
+do
+        if test $i -lt $smallest;then
+                smallest=$i
+        fi
+done
+echo $smallest
+
+OUTPUT:
+3
+
+
+
+5)
+
+#!/bin/bash
+i=1
+sum=0
+while [ $i -le 100 ];do
+        sum='expr $sum +$i'
+        i='expr $i + 1'
+done
+echo The sum is $sum
+
+OUTPUT:
+The sum is expr $sum +$i
+
+
+
+6)
+
+#!/bin/bash
+x=1
+until [ $x -gt 3 ];
+do
+        echo x=$x
+        x='expr $x + 1'
+done
+
+OUTPUT:
+./priya.sh: line 3: [: too many arguments
+x=expr $x + 1
+./priya.sh: line 3: [: too many arguments
+x=expr $x + 1
+./priya.sh: line 3: [: too many arguments
+x=expr $x + 1
+./priya.sh: line 3: [: too many arguments
+x=expr $x + 1
+./priya.sh: line 3: [: too many arguments
+x=expr $x + 1
+./priya.sh: line 3: [: too many arguments ..............................
+x=expr $x + 1
+
+
+7)
+
+!/bin/bash
+
+echo "Enter username"
+read username
+echo "Enter password"
+read password
+
+if [[ ( $username == "Priyanka reddy" && $password == "12345" ) ]]; then
+echo "valid user"
+else
+echo "invalid user"
+fi
+
+OUTPUT:
+Enter username
+Priyanka reddy
+Enter password
+12345
+valid user
+
+
+8)
+
+#!/bin/bash
+
+echo "Enter your lucky number"
+read n
+
+if [ $n -eq 101 ];
+then
+echo "You got 1st prize"
+elif [ $n -eq 510 ];
+then
+echo "You got 2nd prize"
+elif [ $n -eq 999 ];
+then
+echo "You got 3rd prize"
+
+else
+echo "Sorry, try for the next time"
+fi
+
+OUTPUT:
+Enter your lucky number
+101
+You got 1st prize
+
+
+9)
+
+#!/bin/bash
+echo "Enter first number"
+read x
+echo "Enter second number"
+read y
+(( sum=x+y ))
+echo "The result of addition=$sum"
+
+OUTPUT:
+Enter first number
+18
+Enter second number
+30
+The result of addition=48
+
+
+10)
+
+#!/bin/bash
+echo "Enter Your Name"
+read name
+echo "Welcome $name to LinuxHint"
+
+OUTPUT:
+Enter Your Name
+pinky
+Welcome pinky to LinuxHint
+
