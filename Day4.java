@@ -136,21 +136,29 @@ public class PrimeNumber
 {
  public static void main(String args[])
  {
-  int flag=0;
+  int f=0;
   Scanner sc=new Scanner(System.in);
   System.out.println("Enter a number:");
   int n=sc.nextInt();
-  for(int i=2;i<n;i++)
-  if(n%i==0)
+  if(n==0 || n==1)
   {
-   flag=1;
-   break;
+   System.out.println(n+" is not a prime number");
   }
-   if(flag==0)
-    System.out.println(n + "is  a prime number");
+  else
+  {
+   for(int i=2;i<n/2;i++)
+   {
+    if(n%i==0)
+    {
+     f=1;
+     break;
+    }
+   }
+    if(f!==0)
+    System.out.println(n + "is not a prime number");
     else
-     System.out.println(n + "is not a prime number");
-   
+    System.out.println(n + "is  a prime number");
+  }
  }
 }
 
