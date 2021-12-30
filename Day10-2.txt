@@ -1,0 +1,250 @@
+PROGRAN:1
+import java.util.*;
+public class StringMethod1
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    String str=sc.nextLine();
+    char ch=str.charAt(4);
+  {
+    System.out.println(ch);
+   }
+   int n=str.length();
+   System.out.println("Enter the length:");
+  System.out.println(n);
+  }
+}
+OUTPUT:
+priyalucky
+a
+Enter the length:
+10
+-------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:2
+import java.util.*;
+public class StringMethod2
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the string:");
+    String str=sc.nextLine();
+   char ch=str.charAt(5);
+   System.out.println("character at index 5 is: "+ch );
+   int n=str.length();
+  System.out.println("The length of string is: "+n);
+ }
+}
+OUTPUT:
+Enter the string:
+javapoint
+character at index 5 is: o
+The length of string is: 9
+-------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:3
+import java.util.*;
+public class StringMethod3
+{
+  public static void main(String args[])
+  {
+    
+   String str1="GreeksforGreeks";
+    String s1=String.format("The website is %s",str1);
+   System.out.println(s1);
+   String s2=String.format("The answer is %f",47.65734);
+   System.out.println(s2);
+   String s3=String.format("The value is %15.8f",47.65734);
+   System.out.println(s3);
+ }
+}
+OUTPUT:
+The website is GreeksforGreeks
+The answer is 47.657340
+The value is     47.65734000
+------------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:4
+import java.util.*;
+public class StringMethod5
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the string:");
+    String str=sc.nextLine();
+    System.out.println(str.substring(0,4));
+  }
+}
+OUTPUT:
+Enter the string:
+javapoint
+java
+--------------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:5
+import java.util.*;
+public class StringMethod6
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the string:");
+    String str=sc.nextLine();
+    System.out.println("The substring is:"+str.substring(5));
+  }
+}
+OUTPUT:
+Enter the string:
+priyalucky
+The substring is:lucky
+----------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:7
+import java.util.*;
+public class StringMethod8
+{
+  public static void main(String args[])
+  {
+   String str=String.join("-","Always","be","happy");
+   System.out.println(str);
+  }
+}
+OUTPUT:
+Always-be-happy
+----------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:8
+import java.util.*;
+public class Equals
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the two strings:");
+    String str1=sc.nextLine();
+    String str2=sc.nextLine();
+    System.out.println(str1.equals(str2));
+  }
+}
+OUTPUT:1
+Enter the two strings:
+java
+Java
+false
+
+OUTPUT:2
+Enter the two strings:
+Helloworld
+Helloworld
+true
+--------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:9
+import java.util.*;
+public class IsEmpty
+{
+  public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+   System.out.println("Enter the string:");
+   String str=sc.nextLine();
+   System.out.println(str.isEmpty());
+ }
+}
+OUTPUT:1
+Enter the string:
+
+true
+
+OUTPUT:2
+Enter the string:
+java
+false
+--------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:10
+import java.util.*;
+public class StringConcat
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the strings:");
+    String str1=sc.nextLine();
+    String str2=sc.nextLine();
+    System.out.println(str1.concat(str2));
+  }
+}
+OUTPUT:
+Enter the strings:
+java
+pointer
+javapointer
+------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:11
+import java.util.*;
+public class StringReplace
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the strings: ");
+    String str=sc.nextLine();
+    System.out.println(str.replace('e','i'));
+  }
+}
+OUTPUT:
+Enter the strings:
+elephant
+iliphant
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:12
+import java.util.*;
+public class IgnoreCase
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the strings:");
+    String str1=sc.nextLine();
+    String str2=sc.nextLine();
+    if(str1.equalsIgnoreCase(str2))
+    {
+      System.out.println("True");
+    }
+    else
+    {
+      System.out.println("false");
+    }
+  }
+}
+ OUTPUT:1
+Enter the strings:
+Restaurant
+restaurant
+True
+
+OUTPUT:2
+Enter the strings:
+java
+world
+false
+------------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:13
+import java.util.*;
+public class Split
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the string:");
+    String str=sc.nextLine();
+    String[]words=str.split("\\s");
+    for(String w:words)
+    System.out.println(w);
+   }
+}
+OUTPUT:
+Enter the string:
+My Friend Is My Personal
+My
+Friend
+Is
+My
+Personal
+--------------------------------------------------------------------------------------------------------------------------------

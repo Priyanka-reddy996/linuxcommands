@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  PROGRAM:1
+=======
+PROGRAM:1
+>>>>>>> abd36fe58d8ce32708946f9e2a7a3e0db7bb2366
 
 import java.util.*;
 public class Pattern91
@@ -17,7 +21,13 @@ public class Pattern91
    }
       System.out.print("\n");
    }
+<<<<<<< HEAD
   }
+=======
+    
+  
+ }
+>>>>>>> abd36fe58d8ce32708946f9e2a7a3e0db7bb2366
 }
 
 OUTPUT:
@@ -27,7 +37,11 @@ Enter the no.of rows and columns:
 * * * * *
 * * * * *
 --------------------------------------------------------------------------------------------
+<<<<<<< HEAD
  PROGRAM:2
+=======
+PROGRAM:2
+>>>>>>> abd36fe58d8ce32708946f9e2a7a3e0db7bb2366
 
 import java.util.Scanner;
 
@@ -120,6 +134,7 @@ OUTPUT:
    * *
     *
 --------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 PROGRAM:4
 
 import java.util.*;
@@ -224,3 +239,6 @@ OUTPUT:
 * * *
 * *
 *
+=======
+PROGRAM:4
+>>>>>>> abd36fe58d8ce32708946f9e2a7a3e0db7bb2366

@@ -101,10 +101,14 @@ Enter input:
 java 100 cpp 50 python 76
 java    100
 cpp     50
+<<<<<<< HEAD
+python  76																										PROGRAM 5:
+=======
 python  76																										
 
 
 PROGRAM 5:
+>>>>>>> 798f862c8da544b7f8c9f310336cb2d2cefde0bf
 import java.util.Scanner;
 public class Multiple
 {

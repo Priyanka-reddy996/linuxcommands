@@ -1,0 +1,112 @@
+PROGRAM:1
+import java.util.*;
+public class Replace
+{
+  public static void main(String args[])
+  {
+    String str="Java class is interesting";
+    System.out.println(str.replace("class","program"));
+    System.out.println(str.replace('s','p'));
+   System.out.println("Upper case string is:"+str.toUpperCase());
+   int index=str.indexOf("interesting");
+   System.out.println("The index of substring is:"+index);
+   int index1=str.indexOf('s',9);
+   System.out.println("index of char is:"+index1);
+  }
+}
+OUTPUT:
+Java program is interesting
+Java clapp ip interepting
+Upper case string is:JAVA CLASS IS INTERESTING
+The index of substring is:14
+index of char is:9
+---------------------------------------------------------------------------------------------------------------------------
+PROGRAM:2
+import java.util.*;
+public class StringMethod1
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the strings:");
+    String str1=sc.nextLine();
+    String str2=sc.nextLine();
+    System.out.println("string after concat is:"+str1.concat(str2));
+    System.out.println("IgnoreCase is:"+str1.equalsIgnoreCase(str2));
+    System.out.println("string isEmpty:"+str1.isEmpty());
+    System.out.println("equal strings : "+str1.equals(str2));
+  }
+}
+OUTPUT:
+Enter the strings:
+helloworld
+Helloworld
+string after concat is:helloworldHelloworld
+IgnoreCase is:true
+string isEmpty:false
+equal strings : false
+-------------------------------------------------------------------------------------------------------------------------------------------
+PROGRAM:3
+import java.util.*;
+public class StringMethod2
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the string:");
+    String str=sc.nextLine();
+   char ch=str.charAt(5);
+   System.out.println("character at index 5 is: "+ch );
+   int n=str.length();
+  System.out.println("The length of string is: "+n);
+ }
+}
+OUTPUT:
+Enter the string:
+javapoint
+character at index 5 is: o
+The length of string is: 9
+----------------------------------------------------------------------------------------------------------------------------
+PROGRAM:4
+import java.util.*;
+public class StringMethod3
+{
+  public static void main(String args[])
+  {
+    
+   String str1="GreeksforGreeks";
+    String s1=String.format("The website is %s",str1);
+   System.out.println(s1);
+   String s2=String.format("The answer is %f",47.65734);
+   System.out.println(s2);
+   String s3=String.format("The value is %15.8f",47.65734);
+   System.out.println(s3);
+ }
+}
+OUTPUT:
+The website is GreeksforGreeks
+The answer is 47.657340
+The value is     47.65734000
+--------------------------------------------------------------------------------------------------------------------
+PROGRAM:5
+import java.util.*;
+public class Substring
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the string:");
+    String str=sc.nextLine();
+    System.out.println("the substring is:"+str.substring(0,4));
+    System.out.println("the substring of startindex is:"+str.substring(4));
+    System.out.println("Lower case string is:"+str.toLowerCase());
+    System.out.println("the trimed string is:"+str.trim());
+  }
+}
+OUTPUT:
+Enter the string:
+  javapointer
+the substring is:  ja
+the substring of startindex is:vapointer
+Lower case string is:  javapointer
+the trimed string is:javapointer
